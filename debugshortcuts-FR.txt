@@ -1,0 +1,101 @@
+﻿RACCOURCIS DE DEBUG
+---------------
+Ce document contient des raccourcis clavier utilisés pour tester le jeu, enregistrer des vidéos de promotion, etc. Ils sont destinés aux utilisateurs avancés et aux créateurs, fournis TELS QUELS, et RISQUENT d'entraîner des erreurs dans le jeu.
+Tous les raccourcis peuvent être activés depuis une partie (pas dans le menu). Certains raccourcis, comme ALLER AU POINT DE CONTRÔLE, ne fonctionneront que si vous avez déjà terminé le niveau en cours. Certains raccourcis vous empêcheront d'obtenir des succès. Afin que ceux-ci se débloquent de nouveau normalement, retournez au menu principal, puis revenez au niveau.
+
+
+CONSOLE DE DEBUG
+-------------
+En jeu, appuyez sur ` pour ouvrir et fermer la console de debug. Vous pourrez l'utiliser pour saisir certains des raccourcis de debug indiqués ci-dessous.
+
+
+ALLER AU NIVEAU / POINT DE CONTRÔLE - Débloqué en terminant le niveau. Ne fonctionne pas avec les niveaux du Workshop.
+--------------------------
+Si vous voulez accéder à un autre niveau ou point de contrôle, saisissez la commande suivante avec les espaces, et appuyez sur Entrée pour accéder à l'endroit choisi :
+
+
+
+l <niveau> <point de contrôle>
+
+Par exemple, pour accéder au point de contrôle 5 du niveau Aztèque, vous devrez saisir :
+
+
+l 8 5 
+
+Pour accéder à un point de contrôle, saisissez simplement la commande suivante avec les espaces, et appuyez sur Entrée pour accéder à l'endroit choisi :
+
+
+cp <chiffre>
+
+
+Les niveaux et les points de contrôle commencent de 0. Voici la liste :
+
+0 : Manoir, points de contrôle 0 à 3
+1 : Train, points de contrôle 0 à 4
+2 : Porteur, points de contrôle 0 à 3
+3 : Montagne, points de contrôle 0 à 3
+4 : Démolition, points de contrôle 0 à 7
+5 : Château, points de contrôle 0 à 12
+6 : Eau, points de contrôle 0 à 10
+7 : Centrale, points de contrôle 0 à 14
+8 : Aztèque, points de contrôle 0 à 13
+9 : Sombre, points de contrôle 0 à 24
+10 : Vapeur, points de contrôle 0 à 11
+11 : Glace, points de contrôle 0 à 13
+12 : Glace, points de contrôle 0 à 3
+13 : Crédits, points de contrôle 0
+
+
+CAMÉRA 1RE PERSONNE
+-----------------
+Saisissez FPS et appuyez sur Entrée - Passez au mode expérimental FPS.
+
+
+CAMÉRA - Débloqué en terminant le niveau.
+------
+* [ et ] (crochets) - Modifier le niveau de zoom. En appuyant sur Échap pour ouvrir le menu pause puis en revenant à la partie, le niveau de zoom sera réinitialisé.
+* , (virgule) et . (point) - Augmenter et réduire la densité des nuages ou du brouillard (sans cela, les couleurs seraient désaturées sous un certain angle) 
+* F6 - Arrêter/relancer le temps (pour prendre un instant en photo)
+* F7 - Activer/désactiver la caméra en plein écran en mode coopératif
+* F8 - Activer le mode caméra libre, qui vous permet de déplacer la caméra et de capturer des mouvements de caméra prédéfinis
+* Ctrl+Maj+T (ou Cmd+Maj+T pour Mac) - Ralenti : le temps est deux fois moins rapide que la normale
+* Ctrl+Maj+R (ou Cmd+Maj+R pour Mac) - Enregistrer une vidéo image par image (ralentira le temps du jeu pour exporter les fichiers PNG vers C:\Utilisateurs\*nom d'utilisateur*\AppData\LocalLow\NoBrakesGames\Human\Frames ou, pour Mac, vers /Utilisateurs/*nom d'utilisateur*/Library/Application Support/unity.NoBrakesGames.Human/Frames)
+
+
+CAMÉRA LIBRE
+----------------
+Une fois en mode caméra libre, les raccourcis suivants permettront de contrôler la caméra :
+* ZQSD - Déplacements
+* A - Haut
+* W - Bas
+ZQSD et AW sont relatifs à l'angle de la caméra
+* Souris – Tourner la caméra
+* Molette - Changer le champ de vision (FOV)
+* F6 - Figer/animer le personnage
+
+
+ENREGISTREMENT (MODE CINÉMA) - Débloqué en terminant le niveau. Une fois activé, vous ne pourrez plus débloquer de succès.
+-----------------------
+En jeu, appuyez sur * (astérisque du pavé numérique) et l'enregistrement commencera. Un indicateur d'enregistrement rouge apparaîtra dans le coin supérieur gauche de l'écran pour indiquer son fonctionnement. Appuyez de nouveau sur * pour mettre fin à l'enregistrement et activer le mode cinéma. Appuyez de nouveau sur * en mode cinéma pour quitter l'enregistrement. En mode cinéma, la chronologie apparaîtra en bas de l'écran et les raccourcis suivants seront disponibles :
+* Flèche gauche – Rembobiner
+* Flèche droite – Avancer
+* Maj+Flèche gauche – Rembobinage rapide
+* Maj+Flèche droite – Avance rapide
+* Espace – Lecture/pause
+* Maj+Espace – Lecture à l'envers
+
+Un programme tiers (tel que Fraps, par exemple) sera nécessaire pour enregistrer les séquences capturées. Vous pouvez également utiliser Ctrl+Maj+R (ou Cmd+Maj+R sur Mac) pour faire un enregistrement de votre lecture. 
+
+
+IMAGE CLÉ (MODE CINÉMA) - Une fois activé, vous ne pourrez plus débloquer de succès.
+------------------------
+En mode cinéma, afin de créer des séquences dynamiques, vous pouvez définir jusqu'à 9 variables pour la caméra (son angle et sa position dans le monde) par image clé. En plus de cela, vous pouvez également choisir le type de transition utilisé entre chaque scène. Celles-ci seront indiquées sur la chronologie visible en mode cinéma. Les touches à utiliser sont celles des chiffres du clavier, et non du pavé numérique. Vous devrez être en mode caméra libre tout en étant en mode cinéma afin d'enregistrer des images clés.
+
+* 1 à 9 - Créez une image clé normale basée sur les images capturées (comprenant la position et l'angle de la caméra)
+L'option suivante risque de faire trembler l'image si le personnage fait des acrobaties (y compris les sauts) 
+* Maj 1 à 9 - Créez une image clé ciblée, centrée sur le personnage (conserve la position de la caméra, mais son angle sera modifié afin que le personnage soit au centre de l'image). Affiché avec un T sur la chronologie
+* Ctrl 1 à 9 (ou Cmd 1 à 9 pour Mac) - Créez une image clé du personnage (conserve la position de la caméra relative au personnage). Affiché avec un H sur la chronologie
+* 0 - Supprime les images clés
+
+Vous pouvez mélanger les trois types d'images clés (normale, ciblée, personnage) comme bon vous semble.
+Attention : si vous appuyez sur les touches dans le désordre, vous supprimerez les paramètres des dernières touches (par exemple, en appuyant sur 1, puis 3, puis 2, les paramètres du 3 seront supprimés).

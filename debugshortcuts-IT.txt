@@ -1,0 +1,100 @@
+﻿TASTI DI SCELTA RAPIDA DEBUG
+---------------
+Questo documento contiene utili tasti di scelta rapida usati per testare il gioco, registrare filmati di marketing, ecc. Essi sono pensati per utenti esperti e creatori del workshop, senza garanzia di alcun tipo, e POTREBBERO causare bug nel gioco.
+Tutte le scelte rapide possono essere attivate una volta entrati nel gioco (non nel menu). Alcune scelte rapide, come PASSA AL CHECKPOINT, funzioneranno solo se l'attuale livello è già stato portato a termine. Altre scelte rapide impediranno il raggiungimento dei progressi. Per riattivare il raggiungimento dei progressi, bisogna tornare al menu principale e poi rientrare all'interno del livello.
+
+
+CONSOLE DI DEBUG
+-------------
+All'interno del gioco, premere ` per aprire e chiudere la console di debug. Qui potrai inserire alcuni tasti di scelta rapida di debug elencati qui sotto.
+
+
+PASSA AL LIVELLO / CHECKPOINT - Si sblocca portando a termine il livello. Non supportato nei livelli Workshop.
+--------------------------
+Se si desidera passare ad un altro livello o checkpoint, digitare quanto segue, con gli spazi, e premere Invio per passare a quel punto specifico nel gioco:
+
+
+
+l <livello> <checkpoint>
+
+Perciò, per passare al Checkpoint 5 nel livello azteco, bisogna digitare:
+
+
+l 8 5 
+
+Per passare ad un checkpoint, basta digitare quanto segue, con gli spazi, e premere Invio per passare a quel punto specifico nel gioco:
+
+
+cp <numero>
+
+
+I livelli e i checkpoint partono da 0. Sono i seguenti:
+
+0-Villa, checkpoint 0-3
+1-Treno, checkpoint 0-4
+2-Trasporto, checkpoint 0-3
+3-Montagna, checkpoint 0-3
+4-Demolizione, checkpoint 0-7
+5-Castello, checkpoint 0-12
+6-Acqua, checkpoint 0-10
+7-Centrale elettrica, checkpoint 0-14
+8-Azteco, checkpoint 0-13
+9-Tenebre, checkpoint 0-24
+10-Vapore, checkpoint 0-11
+11-Ghiaccio, checkpoint 0-13
+12-Ghiaccio, checkpoint 0-3
+13-Riconoscimenti, checkpoint 0
+
+TELECAMERA IN PRIMA PERSONA
+-----------------
+Digitare FPS e premere Invio - Passa alla modalità FPS sperimentale.
+
+
+TELECAMERA - Si sblocca portando a termine il livello.
+------
+* [ e ] (parentesi quadrate) - cambia lo zoom della telecamera. Premendo Esc per entrare ed uscire dal menu di pausa, lo zoom della telecamera tornerà quello predefinito
+* , (Virgola) e . (Punto) - aumenta e diminuisce la densità di nuvole/nebbia (senza, più inquadrature isometriche potrebbero sembrare desaturate) 
+* F6 - ferma/fa ripartire il tempo (per fare un'istantanea)
+* F7 - alterna telecamera a schermo intero in modalità coop
+* F8 - inserisce la modalità telecamera libera - permette di muovere la telecamera e di acquisire animazioni fotogrammi chiave.
+* Ctrl+Shift+T (oppure Cmd+Shift+T per Mac) - rallentatore - il tempo è due volte più lento.
+* Ctrl+Shift+R (oppure Cmd+Shift+R per Mac) - acquisizione fotogrammi video (il gioco rallenterà per poter esportare i PNG su C:\Users\user\AppData\LocalLow\NoBrakesGames\Human\Frames mentre per  Mac su /Users/user/Library/Application Support/unity.NoBrakesGames.Human/Frames)
+
+
+TELECAMERA LIBERA
+----------------
+Mentre si utilizza la modalità libera, vengono attivati i seguenti tasti di scelta rapida per controllare la telecamera:
+* WASD - muoversi
+* Q - su
+* Z - giù
+WASD & QZ sono relativi all'angolazione della telecamera
+* Mouselook – guardarsi attorno
+* Rotellina del mouse - cambia campo visivo (FOV)
+* F6 - ferma/muovi umano
+
+
+REGISTRATORE (THEATER MODE) - Si sblocca portando a termine il livello. Una volta attivato, bloccherà il raggiungimento di progressi / sblocco.
+-----------------------
+All'interno del gioco, premere * (segno della moltiplicazione sul tastierino numerico) per iniziare ad acquisire fotogrammi. Apparirà un indicatore di registrazione rosso sull'angolo superiore sinistro dello schermo per indicare che la modalità è stata attivata. Premendo * di nuovo, l'acquisizione verrà interrotta e si entrerà in modalità teatro. Premendo ancora * mentre si è in modalità teatro si uscirà dal registratore. Mentre si è in modalità teatro, apparirà una cronologia nella parte inferiore dello schermo e i seguenti tasti di scelta rapida saranno disponibili:
+* Freccia sinistra - riavvolgimento
+* Freccia destra - avanzamento
+* Shift+Freccia sinistra - riavvolgimento rapido
+* Shift+Freccia destra - avanzamento rapido
+* Spazio - play/pausa
+* Shift+Spazio - riproduzione invertita
+
+Per salvare i fotogrammi registrati, è necessario un software esterno di acquisizione video (ad esempio Fraps). È anche possibile usare Ctrl+Shift+R (oppure Cmd+Shift+R su Mac) per l'acquisizione del fotogramma del playback. 
+
+
+FOTOGRAMMA CHIAVE (MODALITÀ TEATRO) - Una volta attivato, bloccherà il raggiungimento dei progressi / sblocco.
+------------------------
+In modalità teatro, per creare playback dinamici, è possibile registrare variabili della telecamera (la sua angolazione e posizione nel mondo) fino a 9 volte al fotogramma chiave. Oltre a registrare la variabile della telecamera, è inoltre possibile indicare il tipo di transizione da attuare tra i fotogrammi. Questi verranno segnati sulla cronologia che appare in modalità teatro. Per registrare il seguente, usare i numeri sulla tastiera e non quelli sul tastierino numerico. Per registrare i fotogrammi chiave, è necessario aver impostato la telecamera libera mentre si è in modalità teatro.
+
+* 1-9 - Crea fotogrammi chiave semplici sul fotogramma del registratore corrente (ricordando la posizione e la rotazione della telecamera nel mondo)
+Il seguente può far sembrare l'inquadratura un po' traballante se l'umano sta compiendo acrobazie in aria (incluso i salti) 
+* Shift 1-9 - Crea fotogrammi chiave mirati che guardano l'umano (conserva la posizione della telecamera nel mondo, la rotazione verrà impostata in modo da rivolgersi verso la posizione finale dell'umano). Segnato con una t sulla cronologia
+* Ctrl 1-9 (oppure Cmd 1-9 su Mac) - Crea un fotogramma chiave umano (viene ricordata la posizione della telecamera relativa all'umano). Segnato con una h sulla cronologia
+* 0 cancella fotogrammi chiave
+
+È possibile mischiare tutti e tre i tipi di fotogrammi chiave (semplici, mirati e umani).
+È necessario ricordare che premendo numeri al di fuori della sequenza sovrascriverà i tasti precedenti (1, 3 il 2 cancellerà il 3).

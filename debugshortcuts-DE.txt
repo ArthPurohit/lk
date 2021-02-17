@@ -1,0 +1,101 @@
+﻿DEBUG-KÜRZEL
+---------------
+Dieses Dokument beinhaltet nützliche Tastaturkürzel, die zum Testen des Spiels, zum Aufnehmen von Marketing-Material usw. verwendet wurden. Sie sind für erfahrene Nutzer sowie Workshop-Nutzer gedacht, werden in ihrer IST-Form vermittelt und KÖNNTEN möglicherweise Bugs im Spiel verursachen.
+Alle Kürzel können aktiviert werden, sobald man im Spiel ist (nicht in einem Menü). Einige Kürzel, wie ZU CHECKPOINT SPRINGEN, funktionieren nur, wenn das aktuelle Level bereits abgeschlossen wurde. Einige Kürzel verhindern den Fortschritt bei Errungenschaften. Um den Fortschritt bei Errungenschaften wieder zu aktivieren, muss man zurück ins Hauptmenü und dann wieder ins Level zurück.
+
+
+DEBUG-KONSOLE
+-------------
+Drücke im Spiel ` zum Öffnen und Schließen der Debug-Konsole. Hier kann man einige der nachfolgenden Debug-Kürzel eingeben.
+
+
+ZU LEVEL / CHECKPOINT SPRINGEN – Freischaltung durch Abschluss des Levels. Keine Unterstützung für Workshop-Level.
+--------------------------
+Wenn man zu einem anderen Level und Checkpoint springen will, muss man folgendes eingeben, mit Leerzeichen und Drücken der Enter-Taste, um im Spiel zu dieser bestimmten Position zu springen:
+
+
+
+l <Level> <Checkpoint>
+
+Um also zu Checkpoint 5 im Azteke-Level zu springen, müsste man eingeben:
+
+
+l 8 5 
+
+Um zu einem Checkpoint zu gelangen, muss man einfach folgendes eingeben, mit Leerzeichen und Drücken der Enter-Taste, um im Level zu dieser bestimmten Position zu springen:
+
+
+cp <Nummer>
+
+
+Level und Checkpoints beginnen bei 0. Die Nummern lauten wie folgt:
+
+0-Villa, Checkpoints 0-3
+1-Zug, Checkpoints 0-4
+2-Schlepptau, Checkpoints 0-3
+3-Gebirge, Checkpoints 0-3
+4-Sprengung, Checkpoints 0-7
+5-Schloss, Checkpoints 0-12
+6-Wasser, Checkpoints 0-10
+7-Kraftwerk, Checkpoints 0-14
+8-Azteke, Checkpoints 0-13
+9-Dunkel, Checkpoints 0-24
+10-Dampf, Checkpoints 0-11
+11-Eis, Checkpoints 0-13
+12-Eis, Checkpoints 0-3 
+13-Credits, checkpoints 0
+
+
+EGO-PERSPEKTIVE
+-----------------
+FPS eingeben und Enter drücken – In den experimentellen FPS-Modus wechseln.
+
+
+KAMERA – Freischaltung durch Abschluss des Levels.
+------
+* [ und ] (eckige Klammern) – Kamera-Zoom ändern. Durch Drücken von Esc zum Betreten und Verlassen des Pausenmenüs wird der Kamera-Zoom auf Standard zurückgesetzt
+* , (Komma) und . (Punkt) – Dichte von Wolken/Nebel erhöhen und verringern (isometrischere Aufnahmen würden ohne dies entsättigt wirken) 
+* F6 – Zeit anhalten/weiterlaufen lassen (um ein Standbild aufzunehmen)
+* F7 – Vollbildschirm-Kamera im KOOP-Modus umschalten
+* F8 – Free-Roam-Kameramodus: Ermöglicht das Bewegen der Kamera und die Aufnahme von Schlüsselbildanimationen
+* Strg+Umschalt+T (oder Cmd+Umschalt+T für Mac) – Slow-Motion: Zeit wird um 2x verringert
+* Strg+Umschalt+R (oder Cmd+Umschalt+R für Mac) – Frame Video Capture (verlangsamt die Spielzeit, um PNGs nach C:\Benutzer\Benutzername\AppData\LocalLow\NoBrakesGames\Human\Frames oder für Mac to /Users/Benutzername/Library/Application Support/unity.NoBrakesGames.Human/Frames zu exportieren)
+
+
+FREE-ROAM-KAMERA
+----------------
+Im Free-Roam-Modus kann die Kamera wie folgt gesteuert werden:
+* WASD – herumbewegen
+* Q – nach oben
+* Z – nach unten
+WASD & QZ sind relativ zum Kamerawinkel
+* Mausbewegung – umblicken
+* Mausrad – Sichtfeld (FOV) ändern
+* F6 – Mensch anhalten/freigeben
+
+
+REKORDER (THEATER-MODUS) – Freischaltung durch Abschluss des Levels. Sobald er aktiviert wurde, blockt er den Fortschritt / die Freischaltung von Errungenschaften.
+-----------------------
+Im Spiel kann man * drücken (Multiplizieren auf dem Ziffernblock), um die Aufnahme von Bildern zu beginnen. Eine rote Aufnahme-Anzeige erscheint links oben auf dem Bildschirm, um anzuzeigen, dass dieser Modus aktiviert wurde. Durch erneutes Drücken von * wird die Aufnahme beendet und der Theater-Modus aufgerufen. Durch erneutes Drücken von * im Theater-Modus wird der Rekorder verlassen. Im Theater-Modus erscheint unten auf dem Bildschirm eine Zeitachse und es gibt folgende Steuerungsmöglichkeiten:
+* Linker Pfeil – zurückspulen
+* Rechter Pfeil – nach vorne spulen
+* Umschalt+Linker Pfeil – schnell zurückspulen
+* Umschalt+Rechter Pfeil – schnell nach vorne spulen
+* Leertaste – abspielen/pausieren
+* Umschalt+Leertaste – rückwärts abspielen
+
+Es gilt zu beachten, dass eine Drittanbieter-Software (z. B. Fraps) zum Speichern der aufgenommenen Bilder benötigt wird. Man kann auch Strg+Umschalt+R (oder Cmd+Umschalt+R für Mac) verwenden, um eine Bildaufnahme der Wiedergabe zu erzeugen. 
+
+
+SCHLÜSSELBILD (THEATER-MODUS) – Sobald er aktiviert wurde, blockt er den Fortschritt / die Freischaltung von Errungenschaften.
+------------------------
+Im Theater-Modus kann dynamische Wiedergabe erzeugt werden, indem Kamera-Variablen (Winkel und Position der Kamera in der Welt) bis zu 9 Mal in Schlüsselbildern aufgenommen werden. Neben der Kamera-Variable kann auch die Art des Übergangs zwischen Bildern angegeben werden. Diese werden auf der Zeitachse markiert, die im Theater-Modus ein Mal erscheint. Um folgendes aufzunehmen, müssen die Ziffern auf der Tastatur, nicht auf dem Ziffernblock verwendet werden. Es gilt zu beachten, dass man sich beim Theater-Modus im Free-Roam-Kamera-Modus befinden muss, um Schlüsselbilder registrieren zu können.
+
+* 1-9 – Reguläres Schlüsselbild beim aktuellen Rekorder-Bild erstellen (wobei Position und Rotation der Kamera in der Welt gemerkt werden)
+Folgendes kann bewirken, dass Bilder wackelig aussehen, falls der Mensch etwas in der Luft tut (einschließlich springen) 
+* Umschalt 1-9 – Gezieltes Schlüsselbild erstellen, das auf den Menschen ausgerichtet ist (speichert die Welt-Position der Kamera, die Kamera-Rotation wird auf die finale Position des Menschen ausgerichtet). Wird auf der Zeitachse mit einem t markiert.
+* Strg 1-9 (oder Cmd 1-9 für Mac) – Mensch-Schlüsselbild erstellen (Kameraposition relativ zum Menschen wird gemerkt). Wird auf der Zeitachse mit einem h markiert.
+* 0 Schlüsselbilder löschen
+
+Alle drei Arten von Schlüsselbildern (regulär, gezielt, Mensch) können gemischt und zugeordnet werden.
+Es gilt zu beachten, dass durch das Drücken von Ziffern außerhalb der Reihenfolge vorherige Tasten überschrieben werden (1, 3, die 2 führt dazu, dass die 3 gelöscht wird).

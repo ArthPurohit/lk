@@ -1,0 +1,101 @@
+﻿ATALHOS DE DEPURAÇÃO
+---------------
+Este documento contém atalhos úteis do teclado que foram usados para testar o jogo, gravar registros de marketing etc. Eles foram criados especialmente para usuários experientes e criadores de oficinas, fornecido por AS IS, e, potencialmente, PODE gerar erros no jogo.
+Os atalhos podem ser ativados no jogo (não no menu). Alguns atalhos, como PULAR PARA O PONTO DE VERIFICAÇÃO, só funcionarão se você já tiver concluído a fase atual. Alguns atalhos impedirão o progresso de conquistas. Para reativar o progresso de conquistas, volte ao menu principal e, então, acesse a fase de novo.
+
+
+CONSOLE DE DEPURAÇÃO
+-------------
+No jogo, pressione ` para abrir e fechar o console de depuração. Digite aqui alguns dos atalhos de depuração listados abaixo.
+
+
+PULAR PARA A FASE / PONTO DE VERIFICAÇÃO- são desbloqueados quando concluir a fase. Não é compatível com as fases da oficina.
+--------------------------
+Se quiser pular para outra fase e para o ponto de verificação, copie o texto abaixo, com espaços, e pressione Enter para pular àquela localização específica do jogo:
+
+
+
+l <fase> <ponto de verificação>
+
+Então, para pular para o ponto de verificação 5, na fase dos Asteca, você deve digitar:
+
+
+l 8 5 
+
+Se quiser pular para um ponto de verificação, escreva o seguinte texto, com espaços, e pressione Enter para pular àquela localização específica da fase:
+
+
+cp <número>
+
+
+As fases e os pontos de verificação começam em 0. E são:
+
+0-Mansão, pontos de verificação 0-3
+1-Trem, pontos de verificação 0-4
+2-Carregar, pontos de verificação 0-3
+3-Montanha, pontos de verificação 0-3
+4-Demolição, pontos de verificação 0-7
+5-Castelo, pontos de verificação 0-12
+6-Água, pontos de verificação 0-10
+7-Usina de energia, pontos de verificação 0-14
+8-Asteca, pontos de verificação 0-13
+9-Sombrio, pontos de verificação 0-24
+10-Vapor, pontos de verificação 0-11
+11-Gelo, pontos de verificação 0-13
+12-Gelo, pontos de verificação 0-3
+13-Créditos, ponto de verificação 0
+
+
+CÂMERA EM PRIMEIRA PESSOA
+-----------------
+Digite FPS e pressione Enter - Troque para o modo experimental FPS.
+
+
+CÂMERA - desbloqueada quando concluir a fase.
+------
+* [ e ] (chaves) - muda o zoom da câmera. Pressionar ESC para entrar e sair do menu de pausa redefinirá o zoom da câmera para o padrão
+* , (vírgula) e . (Ponto final) - aumenta e diminui a densidade da névoa/nuvem (outras fotografias isométricas ficarão saturadas sem isso) 
+* F6 - congelar/descongelar o tempo (para capturar um momento)
+* F7 - altera câmera para tela cheia no modo cooperativo
+* F8 - acessa o modo câmera livre - permite mover a câmera e capturar animações de quadro-chave da câmera.
+* Ctrl+Shift+T (ou Cmd+Shift+T para Mac) - câmera lenta - o tempo fica 2x mais devagar
+* Ctrl+Shift+R (ou Cmd+Shift+R em Mac) - captura quadro do vídeo (desacelera o vídeo para exportar PNGs para C:\Users\user\AppData\LocalLow\NoBrakesGames\Human\Frames ou, para Mac, para /Users/user/Library/Application Support/unity.NoBrakesGames.Human/Frames)
+
+
+CÂMERA LIVRE
+----------------
+No modo câmera livre, os seguintes atalhos são ativados para controlar a câmera:
+* WASD - para visão panorâmica
+* Q - para cima
+* Z - para baixo
+WASD e QZ estão relacionados ao ângulo da câmera
+* Mouse – visão panorâmica
+* Roda do mouse - muda o campo de visão (FOV)
+* F6 - congela/descongela humano
+
+
+GRAVADOR (MODO CINEMA) - desbloqueado quando concluir a fase. Quando ativado, bloqueia/desbloqueia o progresso da conquista.
+-----------------------
+No jogo, pressione * (multiplicador do teclado numérico) para capturar quadros. Aparecerá um indicador de gravador vermelho no canto superior esquerdo da tela para indicar que este modo está ativado. Pressione * de novo para pausar a captura e entrar no modo cinema. Pressione * novamente no modo cinema para fechar o gravador. No modo cinema, aparecerá uma linha do tempo na parte inferior da tela, e os seguintes atalhos ficarão disponíveis:
+* Seta esquerda – rebobinar
+* Seta direita – avançar
+* Shift+Seta esquerda – rebobinar rápido
+* Shift+Seta direita – avançar rápido
+* Espaço – tocar/pausar
+* Shift+Espaço – reprodução reversa
+
+Observe que é necessário usar um programa de gravação de terceiros (o Fraps, por exemplo) para salvar os quadros gravados. Também é possível usar Ctrl+Shift+R (ou Cmd+Shift+R para Mac) para capturar os quadros da reprodução. 
+
+
+QUADRO-CHAVE (MODO CINEMA) - quanto ativado, bloqueia/desbloqueia o progresso da conquista.
+------------------------
+Para criar uma reprodução dinâmica no modo cinema, você pode gravar variáveis da câmera (o ângulo da câmera e a posição no mundo) até 9 vezes por quadro-chave. Além da gravação das variáveis da câmera, você também pode indicar qual será o tipo de transição entre os quadros. Eles serão destacados na linha do tempo que aparece no modo cinema. Para gravar, use os números seguintes do teclado, não use o teclado numérico. Observe que você deve ativar o modo câmera livre no modo cinema para registrar os quadro-chaves.
+
+* 1-9 - Cria um quadro-chave normal no gravador de quadros (de acordo com a rotação e a posição de mundo da câmera)
+Os seguintes comandos podem fazer com que as gravações fiquem oscilantes quando os humanos fazem acrobacias (incluindo saltos) 
+* Shift 1-9 - Cria um quadro-chave concentrado no humano (armazena a posição de mundo da câmera, e define a rotação da câmera para se concentrar na posição final do humano). Marcado com um "t" na linha do tempo.
+* Ctrl 1-9 (ou Cmd 1-9 para Mac) - Cria um quadro-chave (relembra a posição da câmera baseada no humano). Marcado com um "h" na linha do tempo.
+* 0 apagar quadros-chaves
+
+Misture e combine os três tipos de quadros-chaves (normal, concentrados, humanos).
+Observe que ao pressionar os números substituirá os quadros anteriores (no caso, 1, 3, o 2 levará para o 3 ser apagado).

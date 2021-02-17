@@ -1,0 +1,101 @@
+﻿ATALHOS DE DEBUG
+---------------
+Este documento contém atalhos de teclado úteis que foram utilizados para testar o jogo, gravar imagens para marketing, etc. Destinam-se a utilizadores avançados e criadores da workshop, é facultada TAL COMO ESTÁ e PODERÁ potencialmente provocar erros no jogo.
+Todos os atalhos podem ser ativados quando estiveres no jogo (e não num menu). Alguns atalhos, tais como JUMP TO CHECKPOINT, só funcionam se já tiveres concluído o nível atual. Alguns atalhos irão impedir o progresso nos feitos. Para reativares o progresso nos feitos, volta o menu principal e depois volta a entrar no nível.
+
+
+CONSOLA DE DEBUG
+-------------
+No jogo, prime ` para abrires e fechares a consola de debug. Aqui poderás escrever alguns dos atalhos de debug descritos abaixo.
+
+
+SALTAR PARA NÍVEL / PONTO DE CONTROLO - Desbloqueado concluindo um nível. Não é suportado para níveis Oficina.
+--------------------------
+Se quiseres saltar para outros nível e ponto de controlo escreve o seguinte, com espaços e prime Enter para saltares para um local específico do jogo:
+
+
+
+l <nível> <ponto de controlo>
+
+Assim, para saltares para o Ponto de Controlo 5 no nível Asteca, escreverias:
+
+
+l 8 5 
+
+Para ires para um ponto de controlo basta escreveres o seguinte, com espaços e preme Enter para saltares para esse local específico no nível:
+
+
+cp <número>
+
+
+Níveis e pontos de controlo começam no 0. São os seguintes:
+
+0-Mansão, pontos de controlo 0-3
+1-Comboio, pontos de controlo 0-4
+2-Transportar, pontos de controlo 0-3
+3-Montanha, pontos de controlo 0-3
+4-Demolição, pontos de controlo 0-7
+5-Castelo, pontos de controlo 0-12
+6-Água, pontos de controlo 0-10
+7-Central de Energia, pontos de controlo 0-14
+8-Asteca, pontos de controlo 0-13
+9-Escuro, pontos de controlo 0-24
+10-Vapor, pontos de controlo 0-11
+11-Gelo, pontos de controlo 0-13
+12-Gelo, pontos de controlo 0-3
+13-Créditos, ponto de controlo 0
+
+
+CÂMARA NA 1.ª PESSOA
+-----------------
+Escreve FPS e prime Enter - Mudar para o modo FPS experimental.
+
+
+CÂMARA - Desbloqueado concluindo um nível.
+------
+* [ e ] (parêntesis retos) - mudar zoom da câmara. Premir Esc para entrar e sair do menu de pausa irá repor o zoom da câmara na sua predefinição
+* , (Vírgula) e . (Ponto) - aumentar e reduzir a densidade da nuvem/nevoeiro (sem isto, as imagens mais isométricas teriam aspecto menos saturado) 
+* F6 - congelar/descongelar o tempo (para capturares uma imagem parada)
+* F7 - alternar a câmara de ecrã inteiro no modo CO-OP
+* F8 - entrar no modo MovimentoLivre - permite mover a câmara e capturar animações keyframed da câmara
+* Ctrl+Shift+T (ou Cmd+Shift+T para Mac) - câmara lenta - o tempo torna-se 2x mais lento
+* Ctrl+Shift+R (ou Cmd+Shift+R para Mac) - captura de imagem de vídeo (irá tornar o tempo de jogo mais lento para exportar PNGs para C:\Users\user\AppData\LocalLow\NoBrakesGames\Human\Frames ou, para Mac, para /Users/user/Library/Application Support/unity.NoBrakesGames.Human/Frames)
+
+
+CÂMARA DE MOVIMENTO LIVRE
+----------------
+Quando estás no modo MovimentoLivre, os seguintes atalhos são ativados para controlares a câmara:
+* WASD - movimento
+* Q - para cima
+* Z - para baixo
+WASD e QZ são relativos ao ângulo da câmara
+* Olhar com Rato – olhar em volta
+* Roda do Rato - mudar campo de visão (FOV)
+* F6 - congelar/descongelar humano
+
+
+GRAVADOR (MODO CINEMA) - Desbloqueado concluindo um nível. Uma vez ativado, impedirá o progresso / desbloqueio de feitos.
+-----------------------
+No jogo, podes premir * (multiplicar no teclado numérico) e começará a capturar imagens. Irá aparecer um indicador vermelho de gravação no canto superior esquerdo do ecrã, indicando que este modo foi ativado. Premir * novamente irá parar a captura e entrarás no modo cinema. Premir * novamente enquanto estás no modo cinema fará com que saias do gravador. Enquanto estás no modo cinema, aparece uma linha cronológica no fundo do ecrã e os seguintes atalhos ficam disponíveis:
+* Seta para a esquerda – retroceder
+* Seta para a direita – avançar
+* Shift+Seta para a esquerda – retrocesso rápido
+* Shift+Seta para a direita – avanço rápido
+* Espaço – reproduzir/pausa
+* Shift+Espaço – reprodução invertida
+
+Tem em conta que é necessário um programa de gravação de vídeo de terceiros (por exemplo, Fraps) para guardares imagens gravadas. Também podes usar Ctrl+Shift+R (ou Cmd+Shift+R para Mac) para capturares uma imagem da tua reprodução. 
+
+
+KEYFRAME (MODO CINEMA) - Uma vez ativado, impedirá o progresso / desbloqueio de feitos.
+------------------------
+No modo cinema, para criares uma reprodução dinâmica podes gravar variáveis da câmara (o ângulo e posição da câmara no mundo) até 9 vezes para keyframes. Além de gravares a variável da câmara também podes indicar o tipo de transição entre fotogramas. Estes serão assinalados na linha cronológica que aparece quando estás no modo cinema. Para gravares o seguinte, utiliza os números do teclado e não do teclado numérico. Tem em conta que, para registares keyframes, deves estar no modo da câmara MovimentoLivre enquanto estás no Modo Cinema.
+
+* 1-9 - Criar keyframe normal no fotograma atual do gravador (lembrando a posição no mundo e a rotação da câmara)
+O seguinte pode fazer com que as imagens pareçam tremidas se o humano estiver a fazer acrobacias no ar (incluindo saltos) 
+* Shift 1-9 - Criar keyframe direcionada a olhar para o humano (guarda a posição da câmara no mundo, a rotação da câmara será definida de forma a olhar para o humano no posicionamento final). Assinalada com um t na linha cronológica
+* Ctrl 1-9 (ou Cmd 1-9 para Mac) - Criar keyframe humana (a posição da câmara relativa ao humano é recordada). Assinalada com um h na linha cronológica
+* 0 limpar keyframes
+
+Podes misturar os três tipos de keyframes (normal, direcionada , humana).
+Tem em conta que se premires números fora da sequência irás substituir as teclas anteriores (1, 3 o 2 fará com que o 3 seja removido).

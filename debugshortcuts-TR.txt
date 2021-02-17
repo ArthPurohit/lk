@@ -1,0 +1,101 @@
+﻿HATA AYIKLAMA KISAYOLLARI
+---------------
+Bu belge oyunu test etmek, pazarlama görüntülerinin kaydedilmesi vb. için kullanılan faydalı klavye kısayollarını içerir. Bu kısayollar yetkili kullanıcılar ve atölye oluşturucularına yöneliktir, OLDUĞU gibi sunulmuştur ve oyunda hatalara sebep olma İHTİMALLERİ vardır.
+Tüm kısayollar oyuna girdikten sonra etkinleştirilebilir (menüden yapılamaz). KONTROL NOKTASINA ATLA gibi bazı kısayollar sadece mevcut seviyenin halihazırda tamamlanması durumunda çalışır. Bazı kısayollar başarı ilerlemesine engel olur. Başarı ilerlemesini yeniden etkinleştirmek için ana menüye git ve tekrar seviyeye dön.
+
+
+HATA AYIKLAMA KONSOLU
+-------------
+Oyundayken hata ayıklama konsolunu açmak ve kapatmak için `tuşuna bas. Buradan aşağıda listelenen hata ayıklama kısayollarından bazılarını girebilirsin.
+
+
+SEVİYEYE / KONTROL NOKTASINA ATLA - Seviye tamamlandığında açılır. Atölye seviyelerinde desteklenmemektedir.
+--------------------------
+Başka bir seviye veya kontrol noktasına atlamak istersen, oyunda o belirli konuma atlamak için boşluklarla birlikte aşağıdakini yaz ve Enter tuşuna bas.
+
+
+
+l <seviye> <kontrol noktası>
+
+Yani Aztek seviyesinde 5. Kontrol Noktasına atlamak için şunu yazmalısın:
+
+
+l 8 5 
+
+Bir kontrol noktasına gitmek için seviyede o belirli konuma atlamak için boşluklarla birlikte aşağıdakini yaz ve Enter tuşuna bas.
+
+
+cp <numara>
+
+
+Seviyeler ve kontrol noktaları 0'da başlar. Şu şekildedir:
+
+0-Köşk, kontrol noktaları 0-3
+1-Tren, kontrol noktaları 0-4
+2-Taşıma, kontrol noktaları 0-3
+3-Dağ, kontrol noktaları 0-3
+4-İmha, kontrol noktaları 0-7
+5-Kale, kontrol noktaları 0-12
+6-Su, kontrol noktaları 0-10
+7-Elektrik Santrali, kontrol noktaları 0-14
+8-Aztek, kontrol noktaları 0-13
+9-Karanlık, kontrol noktaları 0-24
+10-Buhar, kontrol noktaları 0-11
+11-Buz, kontrol noktaları 0-13
+12-Buz, kontrol noktaları 0-3
+13-Jenerik, kontrol noktaları 0
+
+
+1. ŞAHIS KAMERASI
+-----------------
+FPS yaz ve Enter tuşuna bas - Deneysel FPS moduna geç.
+
+
+KAMERA - Seviye tamamlandığında açılır.
+------
+* [ and ] (köşeli parantez) - kamera yakınlaştırmasını değiştir Duraklatma menüsüne girmek ve çıkmak için Esc tuşuna baskmak kamera yakınlaştırmasını varsayılan ayara döndürecektir
+* , (Virgül) ve . (Nokta) - bulut/sis yoğunluğunu artır ve azalt (bu olmadan daha izometrik görüntüler doygunluğu düşük görünür) 
+* F6 - zamanı dondur/çöz (bir hareketsiz görüntü yakalamak için)
+* F7 - İşbirliği modunda tam ekran kamera seçeneğini değiştir
+* F8 - FreeRoam kamera moduna gir - hareketli kamerayı ve anahtar kare kamera animasyonlarını yakalamayı etkinleştirir
+* Ctrl+Shift+T (veya Mac için Cmd+Shift+T) - yavaş çekim - zaman 2x yavaşlar
+* Ctrl+Shift+R (veya Mac için Cmd+Shift+R) - çerçeveli video yakalama (PNG'leri C:\Users\user\AppData\LocalLow\NoBrakesGames\Human\Frames veya Mac için /Users/user/Library/Application Support/unity.NoBrakesGames.Human/Frames dizinine aktarmak üzere oyun zamanını yavaşlatır)
+
+
+FREE-ROAM KAMERA
+----------------
+FreeRoam'da iken kamerayı kontrol etmek için şu kısayollar etkinleştirilir:
+* WASD - etrafta gezinme
+* Q - yukarı
+* Z - aşağı
+WASD ve QZ kamera açısına göredir
+* Fareyle bakma – etrafa bakınma
+* Fare tekerliği - görüş alanını (FOV) değiştirme
+* F6 - insanı dondurma/çözme
+
+
+KAYDEDİCİ (SİNEMA MODU) - Seviye tamamlandığında açılır. Etkinleştirildiğinde başarı ilerlemesini / kilit açmayı engeller.
+-----------------------
+Oyunda * (sayısal tuş takımında çarpı) tuşuna basmak kare yakalamayı başlatır. Bu modun etkinleştirildiğini belirtmek üzere ekranın sol üst köşesinde kırmızı bir Kayıt göstergesi görüntülenir. Yeniden * tuşuna basmak yakalamayı durdurur ve sinema modunu başlatır. Sinema modunda tekrar * tuşuna basıldığında kaydediciden çıkılır. Sinema modundayken, ekranın alt kısmında bir zaman çizelgesi görüntülenir ve şu kısayollar kullanıma girer:
+* Sol ok – geri sar
+* Sağ ok – ileri
+* Shift+Sol ok – hızlı geri sar
+* Shift+Sağ ok – hızlı ileri
+* Boşluk – oynat/duraklat
+* Shift+Boşluk – tersten oynat
+
+Kaydedilen kareleri depolamak için bir 3. taraf video kaydetme programı (ör. Fraps) kullanılması gerektiğini lütfen unutma. Ayrıca kaydında kare yakalama için Ctrl+Shift+R (veya Mac için Cmd+Shift+R) tuşlarını kullanabilirsin. 
+
+
+ANAHTAR KARE (SİNEMA MODU) - Etkinleştirildiğinde başarı ilerlemesini / kilit açmayı engeller.
+------------------------
+Sinema modunda dinamik kayıttan yürütme oluşturmak için anahtar karelere 9 defaya kadar kamera değişkenleri (dünyadaki kamera açısı ve konumu) kayedebilirsin. Kamera değişkenini kaydederken, kareler arasında ne türden bir geçiş olacağını da belirleyebilirsin. Bunlar sinema modundayken görüntülenen zaman çizelgesinde işaretlenir. Şunları kaydetmek için sayısal tuş takımındaki değil, klavyedeki sayıları kullan. Anahtar kareleri kaydetmek için Sinema Modundayken Free Roam kamera modunda olman gerektiğini unutma.
+
+* 1-9 - Mevcut kaydedici karesinde normal anahtar kare oluştur (kamera dünya konumunu ve döndürmesini hatırlayarak)
+Şunlar, insan havada akrobatik hareketler yaparken (zıplamak dahil) görüntünün titrek olmasına yol açabilir 
+* Shift 1-9 - İnsana bakan hedefli anahtar kare oluştur (kamera dünya konumunu tutar, kamera döndürmesi insanın nihai konumuna bakacak şekilde ayarlanır). Zaman çizelgesinde bir t harfli ile işaretlenir.
+* Ctrl 1-9 (veya Mac için Cmd 1-9) - İnsan anahtar karesi oluştur (kamera konumu insana bağlı olarak hatırlanır). Zaman çizelgesinde bir h harfli ile işaretlenir.
+* 0 anahtar kareleri temizle
+
+Tüm üç anahtar türünü karıştırabilir ve eşleyebilirsin (normal, hedefli, insan)
+Sayılara sıralarının dışında basmanın önceki tuşları geçersiz kılacağını unutma (1, 3 ve 2, 3'ün silinmesine neden olur).

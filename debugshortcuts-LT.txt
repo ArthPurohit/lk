@@ -1,0 +1,101 @@
+﻿SUSIPAŽINKITE SU SPARČIASIAIS KLAVIŠAIS
+---------------
+Šiame dokumente pateikiama naudinga informacija apie sparčiuosius klavišus, kuriais galima naudotis testuojant žaidimus, įrašinėjant reklaminius vaizdus ir kt. Spartieji klavišai skirti profesionaliems naudotojams ir studijų kūrėjams, yra NEKEIČIAMI ir žaidimuose GALI sukelti klaidų.
+Visus sparčiuosius klavišus žaidime (ne meniu) galima aktyvinti vieną kartą. Kai kurie spartieji klavišai, tokie kaip JUMP TO CHECKPOINT (pereiti prie kontrolinio punkto), veikia tik tuo atveju, jei jau esate užbaigę pasirinktą lygį. Kai kurių sparčiųjų klavišų naudojimas gali sutrukdyti žaidimo eigą. Norėdami tęsti sustabdytą žaidimą, grįžkite į pagrindinį meniu ir tada vėl atgal į atitinkamą žaidimo lygį.
+
+
+SUSIPAŽINKITE SU KONSOLE
+-------------
+Žaidimo metu paspauskite dešiniojo kirčio mygtuką (`) ir uždarykite konsolę. Čia galite įvesti kelis toliau nurodytus sparčiuosius klavišus.
+
+
+JUMP TO LEVEL (pereiti į lygį) / CHECKPOINT (kontrolinį punktą) – atrakinami užbaigus atitinkamą lygį. Nesuderintas su studijos lygiais.
+--------------------------
+Jei norite pereiti prie kito lygio ir kontrolinio punkto, įveskite toliau nurodytus simbolius, įskaitant tarpus, ir paspauskite „Enter“:
+
+
+
+l <lygis> <kontrol. taškas>
+
+Taigi, jei norite pereiti prie „Actekai“ lygio kontrolinio punkto Nr. 5, turite įvesti:
+
+
+l 8 5 
+
+Jei norite pereiti prie kontrolinio punkto, tiesiog įveskite toliau nurodytus simbolius, įskaitant tarpus, ir paspauskite „Enter“:
+
+
+cp <numeris>
+
+
+Lygiai ir kontroliniai punktai skaičiuojami nuo 0. Kiekviename lygyje esantys kontroliniai punktai:
+
+0 – „Rūmai“, kontroliniai punktai 0–3
+1 – „Traukinys“, kontroliniai punktai 0-4
+2 – „Krovinys“, kontroliniai punktai 0-3
+3 – „Kalnas“, kontroliniai punktai 0-3
+4 – „Griovimas“, kontroliniai punktai 0-7
+5 – „Pilis“, kontroliniai punktai 0-12
+6 – „Vanduo“, kontroliniai punktai 0-10
+7 – „Elektrinė“, kontroliniai punktai 0-14
+8 – „Actekai“, kontroliniai punktai 0-13
+9 – „Tamsa“, kontroliniai punktai 0-24
+10 – „Garai“, kontroliniai punktai 0-11
+11 – „Ledas“, kontroliniai punktai 0-13
+12 – „Ledas“, kontroliniai punktai 0-3
+13 – „Titrai“, kontroliniai punktai 0
+
+
+1-OJO ASMENS KAMERA
+-----------------
+Įveskite FPS ir paspauskite „Enter“ – įjungsite eksperimentinį FPS režimą.
+
+
+CAMERA  (kamera) – atrakinama užbaigus lygį.
+------
+* Laužtieji skliausteliai ([ ir ]) – keičia kameros vaizdo išdidinimą. Paspaskite „Esc“, jei norite įjungti ir išjungti pauzės meniu, po ko, grąžinamas pirminis kameros vaizdas
+* Kablelis (,) ir taškas (.) – didina ir mažina rūko intensyvumą (be šios funkcijos didesniu jautriu daryti kadrai atrodys blankūs) 
+* F6 – užšaldymo / atšaldymo laikas (fiksuojant statinį vaizdą)
+* F7 – viso ekrano vaizdo įjungimas / išjungimas CO-OP režime
+* F8 – „FreeRoam“ kameros režimo įjungimas, kuris leidžia keisti kameros padėtį ir fiksuoti dinaminius vaizdus
+* Ctrl + Shift + T (arba „Mac“ atveju Cmd + Shift + T) – sulėtinimas 2x
+* Ctrl + Shift + R (arba „Mac“ atveju Cmd + Shift + R) – vaizdo įrašo fiksavimas (sulėtins žaidimo eigą, kad būtų galima vaizdus eksportuoti į PNG formato failą, išsaugomą adresu C:\Users\user\AppData\LocalLow\NoBrakesGames\Human\Frames, arba „Mac“ atveju /Users/user/Library/Application Support/unity.NoBrakesGames.Human/Frames)
+
+
+„FREE-ROAM“ KAMERA
+----------------
+Įjungus „FreeRoam“, kamerą galima valdyti šiais sparčiaisiais klavišais:
+* WASD – sukiotis į visas puses
+* Q – kelti į viršų
+* Z – leisti žemyn
+W, A, S, D, Q ir Z veikimas priklauso nuo kameros kampo
+* Pelės judinimas – žvalgyba aplinkui
+* Pelės ratuko sukimas – matymo lauko (angl. trump. FOV) keitimas
+* F6 – sustabdyti / paleisti žmogų
+
+
+REGISTRATORIUS (TEATRO REŽIMAS) – atrakinama užbaigus lygį. Pradėjus naudoti gali sutrukdyti žaidimo eigą.
+-----------------------
+Žaidimo metu galite paspausti žvaigždutę (*) (daugybos ženklas skaičių klaviatūroje) ir kamera pradės fiksuoti vaizdus. Viršutiniame kairiajame ekrano kampe įsijungs raudonos spalvos indikatorius, nurodantis šio režimo aktyvumą. Dar kartą paspaudę žvaigždutę sustabdysite įrašymą ir įjungsite kino teatro režimą. Būdami kino teatro režime paspauskite žvaigždutę, jei norite išeiti iš registratoriaus režimo. Naudojantis kino teatro režimu ekrano apačioje rodoma laiko juosta ir atsiranda galimybė naudotis šiais sparčiaisiais klavišais:
+* Rodyklė kairėn – atsukti atgal
+* Rodyklė dešinėn – pasukti į priekį
+* Shift + Rodyklė kairėn – greitai atsukti atgal
+* Shift + Rodyklė dešinėn – greitai pasukti į priekį
+* Tarpas – paleisti / pristabdyti
+* Shift + tarpas – paleisti atbulai
+
+Dėmesio, užfiksuotiems kadrams išsaugoti būtina papildoma vaizdo įrašymo programa (pvz., „Fraps“). Taip pat, jei norite užfiksuoti ekrane rodomą vaizdą, galima pasinaudoti Ctrl + Shift + R (arba „Mac“ atveju Cmd + Shift + R) klavišų kombinacija. 
+
+
+PAGRINDINIAI KADRAI (TEATRO REŽIMAS) – pradėjus naudoti gali sutrukdyti žaidimo eigą / lygių atrakinimą.
+------------------------
+Norėdami kino teatro režime sukurti dinaminį paleidimą, galite iki 9 kartų kameros kintamuosius priskirti pagrindiniams kadrams. Įrašant kameros kintamąjį taip pat galite nurodyti perėjimo tarp kadrų tipą. Jie bus pažymėti kadro laiko juostoje, kuri rodoma įjungus kino teatro režimą. Norėdami įrašyti, naudokite pagrindinės klaviatūros skaičių klavišus, o ne skaičių klaviatūrą.  Atminkite, norint teatro režime registruoti pagrindinius kadrus, būtina įjungti „FreeRoam“ kameros režimą.
+
+* 1–9 – pasirinktame registratoriaus kadre sukuria įprastą pagrindinį kadrą (atsimena globalią kameros padėtį ir pasukimo kampą)
+Dėl to vaizdai gali gautis šiek tiek išplaukę, jei žmogus ore vykdo akrobatinius judesius (įskaitant šuolius) 
+* Shift + 1–9 – sukuria pagrindinį, į žmogų nukreiptą, kadrą (atsimena globalią kameros padėtį ir pasukimo kampą, atitinkantį galutinę žmogaus padėtį). Laiko juostoje žymima raide „t“
+* Ctrl + 1–9 (arba „Mac“ atveju Cmd + 1–9) – sukuria pagrindinius žmogaus kadrus (atsimena kameros padėtį, atitinkančią žmogaus padėtį). Laiko juostoje žymima raide „h“
+* 0 pašalina išsaugotus pagrindinius kadrus
+
+Galite laisvai kaitalioti visų trijų tipų pagrindinius kadrus (įprastus, tikslinius ir žmogaus).
+Dėmesio – spaudžiant klavišą ne eilės tvarka, prieš jį einančių klavišų reikšmės pašalinamos (paspaudus 1, 3 ir 2, 3 klavišo reikšmė bus pašalinta).

@@ -1,0 +1,101 @@
+﻿ATAJOS DE DEPURACIÓN
+---------------
+Este documento contiene accesos directos de teclado útiles que se usaron para probar el juego, grabar imágenes de marketing, etc. Están destinados a usuarios avanzados y creadores de Workshop, se proporcionan TAL CUAL y PODRÍAN causar errores en el juego.
+Todos los accesos directos se pueden activar una vez en el juego (no en un menú). Algunos accesos directos, como SALTAR A PUNTO DE CONTROL, solo funcionarán si ya se ha completado el nivel actual. Algunos evitarán el progreso del logro. Para reactivar el progreso del logro, vuelve al menú principal y luego vuelve al nivel de nuevo.
+
+
+CONSOLA DE DEPURACIÓN
+-------------
+En el juego pulsa `para abrir y cerrar la consola de depuración. Aquí es donde puedes escribir algunos de los accesos directos de depuración que se enumeran a continuación.
+
+
+SALTAR A NIVEL/PUNTO DE CONTROL: Se desbloquea al completar el nivel. No compatible para niveles de Workshop.
+----------------------------
+Si quieres saltar a otro nivel y punto de control, escribe lo siguiente, con espacios, y pulsa Intro para saltar a esa ubicación específica en el juego:
+
+
+
+l <nivel> <punto de control>
+
+Así, para saltar al punto de control 5 en el nivel azteca, escribirías:
+
+
+l 8 5 
+
+Para ir a un punto de control, escribe lo siguiente, con espacios, y pulsa Intro para saltar a esa ubicación específica en el nivel:
+
+
+cp <número>
+
+
+Los niveles y puntos de control comienzan en 0. Son los siguientes:
+
+0-Mansión, puntos de control 0-3
+1-Tren, puntos de control 0-4
+2-Pilla-Pilla, puntos de control 0-3
+3-Montaña, puntos de control 0-3
+4-Demolición, puntos de control 0-7
+5-Castillo, puntos de control 0-12
+6-Agua, puntos de control 0-10
+7-Planta Eléctrica, puntos de control 0-14
+8-Azteca, puntos de control 0-13
+9-Oscuridad, puntos de control 0-24
+10-Vapor, puntos de control 0-11
+11-Hielo, puntos de control 0-13
+12-Hielo, puntos de control 0-3 
+13-Créditos, puntos de control 0
+
+
+CAMARA DE 1.ª PERSONA
+-----------------
+Escribe FPS y pulsa Intro: Cambia al modo experimental FPS.
+
+
+CÁMARA: Se desbloquea al completar el nivel.
+------
+* \ [ y ] (corchetes): Cambia el zoom de la cámara. Pulsar Esc para acceder y salir del menú de pausa restablecerá el zoom de la cámara a su valor por defecto
+* , (coma) y . (punto): Aumenta y disminuye la densidad de nubes/niebla (más disparos isométricos se verían desaturados sin esto) 
+* F6: Tiempo de congelación/descongelación (para capturar una imagen fija)
+* F7: Alternar cámara en pantalla completa en modo cooperativo
+* F8: Acceder al modo de cámara libre: permite mover la cámara y capturar animaciones de cámara con fotogramas clave
+* Ctrl + mayús + T (cmd + mayús + T para Mac): Cámara lenta, el tiempo se vuelve 2 veces más lento
+* Ctrl + mayús + R (cmd + mayús  + R para Mac): Captura de vídeo de fotograma (ralentizará el tiempo del juego para exportar PNG a C:\Users\user\AppData\LocalLow\NoBrakesGames\Human\Frames o para Mac a /Users/user/Library/Application Support/unity.NoBrakesGames.Human/Frames)
+
+
+CÁMARA LIBRE
+----------------
+Una vez en el modo de cámara libre, se habilitan los siguientes accesos directos para controlar la cámara:
+* WASD: Moverse
+* Q: Arriba
+* Z: Abajo
+WASD y QZ son relativos al ángulo de la cámara
+* Vista de ratón: Mirar alrededor
+* Ruleta de ratón: Cambiar el campo de visión
+* F6: Congelar/Descongelar humano
+
+
+GRABADORA (MODO TEATRO): Se desbloquea al completar el nivel. Una vez activado, bloqueará el progreso/desbloqueo del logro.
+-----------------------
+En el juego puedes pulsar * (multiplicar en el teclado numérico) y comenzará a capturar fotogramas. Aparecerá un indicador de grabación rojo en la esquina superior izquierda de la pantalla para indicar que este modo se ha activado. Al pulsar * de nuevo dejará de capturar y accederá al modo teatro. Al pulsar * de nuevo estando en el modo teatro se cerrará la grabadora. En el modo teatro, aparecerá una línea de tiempo en la parte inferior de la pantalla y los siguientes accesos directos estarán disponibles:
+* Flecha izquierda: Rebobinar
+* Flecha derecha: Avanzar
+* Flecha izquierda: Rebobina rápido
+* Flecha derecha: Avanza rápido
+* Barra espaciadora: Reproducir/Pausa
+* Mayús + barra espaciadora: Reproducción inversa
+
+Ten en cuenta que se necesita un programa de grabación de vídeo externo (por ejemplo, Fraps) para guardar los fotogramas grabados. También puedes usar ctrl + mayús + R (o cmd + mayús + R para Mac) para hacer una captura de fotograma de tu reproducción. 
+
+
+FOTOGRAMA CLAVE (MODO TEATRO): Una vez activado, bloqueará el progreso/desbloqueo de logros.
+------------------------
+Para crear una reproducción dinámica en el modo teatro puedes grabar las variables de la cámara (el ángulo y la posición de la cámara en el mundo) hasta 9 veces en fotogramas clave. Junto con la grabación de la variable de la cámara, también puedes indicar qué tipo de transición ocurre entre fotogramas. Estos se marcarán en la línea de tiempo que aparece una vez en el modo teatro. Para grabar lo siguiente, usa los números en el teclado, no en el teclado numérico. Ten en cuenta que debes estar en el modo de cámara libre mientras estás en el modo teatro para registrar fotogramas clave.
+
+* 1-9: Crea un fotograma clave regular en el fotograma actual de la grabadora (recordando la posición y rotación del de la cámara en el mundo)
+Las siguientes opciones pueden hacer que las capturas parezcan inestables si el humano está haciendo acrobacias en el aire (incluido el salto) 
+* Mayús 1-9: Crear un fotograma clave mirando a humanos (almacena la posición de la cámara en el mundo, la rotación de la cámara se configurará para mirar a la posición humana final). Marcado con una t en la línea de tiempo
+* Ctrl 1-9 (o cmd 1-9 para Mac): Crea un fotograma clave humano (se recuerda la posición de la cámara en relación con el humano). Marcado con una h en la línea de tiempo
+* 0: Borrar fotogramas clave
+
+Puedes mezclar y combinar los tres tipos de fotogramas clave (normal, específico, humano).
+Ten en cuenta que al pulsar los números fuera de orden, se sobrescribirán las teclas anteriores (1, 3 y 2 hará que se borre el 3).

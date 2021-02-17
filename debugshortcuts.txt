@@ -1,0 +1,101 @@
+﻿DEBUG SHORTCUTS
+---------------
+This document contains useful keyboard shortcuts that were used to test the game, record marketing footage, etc. They are meant for power users and workshop creators, provided AS IS, and MIGHT potentially cause bugs in the game.
+All the shortcuts can be activated once in the game (not in a menu). Some shortcuts, like JUMP TO CHECKPOINT, will only work if you have already completed the current level. Some shortcuts will prevent achievement progress. To reactivate achievement progress, go back to the main menu and then back into the level again.
+
+
+DEBUG CONSOLE
+-------------
+In game press ` to open and close the debug console. This is where you can type some of the debug shortcuts listed below.
+
+
+JUMP TO LEVEL / CHECKPOINT - Unlocked by completing level. Not supported for Workshop levels.
+--------------------------
+If you want to jump to another level and checkpoint type the following, with spaces and press Enter to jump to that specific location in the game:
+
+
+
+l <level> <checkpoint>
+
+So to jump to Checkpoint 5 in the Aztec level you'd type:
+
+
+l 8 5 
+
+To go to a checkpoint just type the following, with spaces and press Enter to jump to that specific location in the level:
+
+
+cp <number>
+
+
+Levels and checkpoints start at 0. They are as follows:
+
+0-Mansion, checkpoints 0-3
+1-Train, checkpoints 0-4
+2-Carry, checkpoints 0-3
+3-Mountain, checkpoints 0-3
+4-Demolition, checkpoints 0-7
+5-Castle, checkpoints 0-12
+6-Water, checkpoints 0-10
+7-Power Plant, checkpoints 0-14
+8-Aztec, checkpoints 0-13
+9-Dark, checkpoints 0-24
+10-Steam, checkpoints 0-11
+11-Ice, checkpoints 0-13
+12-Ice, checkpoints 0-3 
+13-Credits, checkpoints 0
+
+
+1ST PERSON CAMERA
+-----------------
+Type FPS and press Enter - Switch to the experimental FPS mode.
+
+
+CAMERA - Unlocked by completing level.
+------
+* [ and ] (square brackets) - change camera zoom. Pressing Esc to enter and exit the pause menu will reset the camera zoom back to its default
+* , (Comma) and . (Period) - increase and decrease cloud/fog density (more isometric shots would look desaturated without this) 
+* F6 - freeze/unfreeze time (to capture a still)
+* F7 - toggle fullscreen camera in CO-OP mode
+* F8 - enter FreeRoam camera mode - enables moving camera and capturing keyframed camera animations
+* Ctrl+Shift+T (or Cmd+Shift+T for Mac) - slow-motion - time becomes 2x slower
+* Ctrl+Shift+R (or Cmd+Shift+R for Mac) - frame video capture (will slow game time to export PNGs to C:\Users\user\AppData\LocalLow\NoBrakesGames\Human\Frames or for Mac to /Users/user/Library/Application Support/unity.NoBrakesGames.Human/Frames)
+
+
+FREE-ROAM CAMERA
+----------------
+Once in FreeRoam the following shortcuts are enabled to control the camera:
+* WASD - move around
+* Q - up
+* Z - down
+WASD & QZ are relative to the camera’s angle
+* Mouselook – look around
+* Mousewheel - change field of vision (FOV)
+* F6 - freeze/unfreeze human
+
+
+RECORDER (THEATER MODE) - Unlocked by completing level. Once activated it will block achievement progress / unlocking.
+-----------------------
+In game you can press * (multiply on the numpad) and it will start capturing frames. A red Recording indicator will appear in the top left corner of the screen to indicate that this mode has been activated. Pressing * again will stop capturing and enter theater mode. Pressing * again while in theater mode will exit the recorder. While in theater mode a timeline will appear at the bottom of the screen and the following shortcuts will become available:
+* Left arrow – rewind
+* Right arrow – forward
+* Shift+Left arrow – fast rewind
+* Shift+Right arrow – fast forward
+* Space – play/pause
+* Shift+Space – reverse play
+
+Please note, a 3rd party video recording program (eg Fraps) is needed to save recorded frames. You can also use Ctrl+Shift+R (or Cmd+Shift+R for Mac) to do a frame capture of your playback. 
+
+
+KEY-FRAME (THEATER MODE) - Once activated it will block achievement progress / unlocking.
+------------------------
+In theater mode to create dynamic play back you can record camera variables (the camera angle and position in the world) up to 9 times to key-frames. Along with recording the camera variable you can also indicate what type of transition happens between frames. These will be marked on the timeline that appears once in theater mode. To record the following use the numbers on the keyboard, not on the numpad. Please note that you must be in Free Roam camera mode while in Theater Mode to register key-frames.
+
+* 1-9 - Create regular key-frame at current recorder frame (remembering camera world position and rotation)
+The following can make shots seem shaky if human is doing mid-air acrobatics (including jumping) 
+* Shift 1-9 - Create targeted key-frame looking at human (stores camera world position, camera rotation will be set to look at the human final positioning). Marked with a t on the timeline
+* Ctrl 1-9 (or Cmd 1-9 for Mac) - Create human key-frame (camera position relative to human is remembered). Marked with a h on the timeline
+* 0 clear key-frames
+
+You can mix and match all three types of key-frames (regular, targeted, human).
+Note that pressing numbers out of sequence will overwrite previous keys (1, 3 the 2 will lead to 3 being cleared).

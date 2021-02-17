@@ -1,0 +1,101 @@
+﻿PINTASAN DEBUG
+---------------
+Dokumen ini berisi pintasan keyboard yang berguna, yang digunakan untuk menguji game, merekam rekaman pemasaran, dan sebagainya. Pintasan ini dibuat untuk pengguna daya dan kreator workshop, asalkan ADA, dan DAPAT menyebabkan bug dalam game.
+Semua pintasan dapat diaktifkan dalam game (bukan di menu). Beberapa pintasan, seperti LOMPAT KE CHECKPOINT, hanya akan berfungsi jika kamu telah menyelesaikan level saat ini. Beberapa pintasan akan menghalangi kemajuan pencapaian. Untuk mengaktifkan kembali kemajuan pencapaian, kembali ke menu utama dan kembali ke level lagi.
+
+
+KONSOL DEBUG
+-------------
+Dalam game, tekan ` untuk membuka dan menutup konsol debug. Di sini kamu dapat mengetikkan beberapa pintasan debug yang tercantum berikut.
+
+
+LOMPAT KE LEVEL / CHECKPOINT - Dibuka dengan menyelesaikan level. Tidak didukung untuk level Workshop.
+--------------------------
+Jika kamu ingin melompat ke level dan checkpoint lain, ketikkan pintasan berikut, dengan spasi dan tekan Enter untuk melompat ke lokasi tertentu tersebut dalam game:
+
+
+
+l <level> <checkpoint>
+
+Jadi, untuk melompat ke Checkpoint 5 di level Aztek kamu harus mengetik:
+
+
+l 8 5 
+
+Untuk pergi ke checkpoint, cukup ketikkan teks di bawah, dengan spasi dan tekan Enter untuk melompat ke lokasi tertentu tersebut di level:
+
+
+cp <nomor>
+
+
+Level dan checkpoint dimulai dari 0. Berikut ini pintasan debug:
+
+0-Griya, checkpoint 0-3
+1-Kereta, checkpoint 0-4
+2-Angkut, checkpoint 0-3
+3-Gunung, checkpoint 0-3
+4-Pembongkaran, checkpoint 0-7
+5-Istana, checkpoint 0-12
+6-Air, checkpoint 0-10
+7-Pembangkit Listrik, checkpoint 0-14
+8-Aztek, checkpoint 0-13
+9-Gelap, checkpoint 0-24
+10-Uap, checkpoint 0-11
+11-Es, checkpoint 0-13
+12-Es, checkpoint 0-3
+13-Kredit, checkpoint 0
+
+
+KAMERA ORANG PERTAMA
+-----------------
+Ketik FPS dan tekan Enter - Beralih ke mode FPS eksperimental.
+
+
+KAMERA - Dibuka dengan menyelesaikan level.
+------
+* [ dan ] (kurung kotak) - mengubah zoom kamera. Menekan Esc untuk masuk dan keluar menu jeda akan mengatur ulang zoom kamera kembali ke default
+* , (Koma) dan . (Titik) - meningkatkan dan mengurangi ketebalan awan/kabut (lebih banyak tembakan isometrik akan terlihat desaturated tanpa ini) 
+* F6 - menghentikan/menggerakkan waktu (untuk menangkap dengan stabil)
+* F7 - beralih ke kamera layar penuh dengan mode CO-OP
+* F8 - masukkan mode kamera FreeRoam - mengaktifkan kamera yang bergerak dan menangkap keyframe animasi kamera
+* Ctrl+Shift+T (atau Cmd+Shift+T untuk MAc) - gerakan lambat - waktu menjadi 2x lebih cepat
+* Ctrl+Shift+R (atau Cmd+Shift=R untuk Mac) - tangkapan video bingkai (akan memperlambat waktu game untuk mengekspor PNG ke C:\Users\user\AppData\LocalLow\NoBrakesGames\Human\Frames or for Mac to /Users/user/Library/Application Support/unity.NoBrakesGames.Human/Frames)
+
+
+KAMERA FREE-ROAM
+----------------
+Setelah dalam FreeRoam, pintasan berikut ini diaktfikan untuk mengendalikan kamera:
+* WASD - bergerak di sekitar
+* Q - ke atas
+* Z - ke bawah
+WASD & QZ berkaitan dengan sudut kamera
+* Mouselook – lihat sekeliling
+* Mousewheel - mengubah bidang pandangan (FOV)
+* F6 - menghentikan/menggerakkan manusia
+
+
+PEREKAM (MODE TEATER) - Dibuka dengan menyelesaikan level. Setelah diaktifkan, mode ini akan memblokir kemajuan pencapaian / buka kunci.
+-----------------------
+Dalam game, kamu dapat menekan * (beberapa di numpad) dan mode ini akan mulai menangkap bingkai. Indikator Rekaman merah akan muncul di sudut kiri atas layar untuk mengindikasikan bahwa mode ini telah diaktifkan. Menekan * lagi akan berhenti menangkap dan memasuki mode teater. Menekan * lagi saat dalam mode teater akan keluar dari perekam. Saat dalam mode teater, lini masa akan muncul d bawah layar dan akan tersedia pintasan berikut:
+* Panah kiri – mundur
+* Panah kanan – maju
+* Shift+Panah kiri – mundur cepat
+* Shift+Panah kanan – maju cepat
+* Spasi – mainkan/jeda
+* Shift+Spasi – mainkan terbalik
+
+Harap diperhatikan, program perekaman video pihak ketiga (misalnya Fraps) diperlukan untuk menyimpan bingkai yang direkam. Kamu juga dapat menggunakan Ctrl+Shift+R (atau Cmd+Shift+R untuk Mac) untuk melakukan penangkapan bingkai playback kamu. 
+
+
+KEYFRAME (MODE TEATER) - Setelah diaktifkan, mode ini akan memblokir kemajuan pencapaian / buka kunci.
+--------------------------
+Dalam mode teater, untuk membuat playback yang dinamis kamu dapat merekam variabel kamera (sudut dan posisi kamera di dunia) hingga 9 kali menjadi keyframe. Bersama dengan merekam variabel kamera, kamu juga dapat menunjukkan jenis transisi apa yang terjadi di antara bingkai. Jenis transisi ini akan ditandai di lini masa yang muncul satu kali dalam mode teater. Untuk merekam penggunaan nomor berikut di keyboard, bukan di numpad. Harap diperhatikan bahwa kamu harus sedang dalam mode kamera Free Roam saat dalam Mode Teater untuk mendaftarkan keyframe.
+
+* 1-9 - Membuat keyframe reguler di bingkai perekam saat ini (mengingat rotasi dan posisi dunia kamera)
+Pintasan berikut dapat membuat bidikan tampak goyah jika manusia melakukan akrobat di udara (termasuk melompat) 
+* Shift 1-9 - Membuat target keyframe melihat ke manusia (menyimpan posisi dunia kamera, rotasi kamera akan diatur untuk melihat posisi akhir manusia). Ditandai dengan t di lini masa
+* Ctrl 1-9 (atau Cmd 1-9 untuk Mac) - Membuat keyframe manusia (posisi kamera yang berkaitan dengan manusia akan diingat). Ditandai dengan h di lini masa
+* 0 menghapus keyframe
+
+Kamu dapat memadu-madankan tiga jenis keyframe (reguler, target, manusia).
+Harap diperhatikan bahwa menekan nomor secara tidak berurutan akan menimpa kunci sebelumnya (1, 3 angka 2 akan menghapus 3).

@@ -1,0 +1,101 @@
+﻿SKRÓTY
+---------------
+Niniejszy dokument zawiera przydatne skróty klawiszowe, które były wykorzystywane do testowania gry, rejestracji materiałów marketingowych itd. Są one przeznaczone dla zaawansowanych użytkowników oraz twórców Warsztatu. Są dostępne „TAKIE, JAKIE SĄ” i potencjalnie MOGĄ zawierać błędy.
+Wszystkie skróty można aktywować z poziomu gry (nie w menu). Niektóre skróty, przykładowo PRZEJŚCIE DO PUNKTU KONTROLNEGO, działają dopiero po ukończeniu określonego poziomu. Niektóre skróty uniemożliwiają postępy w osiągnięciach. Aby włączyć ponownie postępy w osiągnięciach, należy wyjść do głównego menu, a następnie powrócić do poziomu.
+
+
+PANEL KOMEND
+-------------
+Naciśnięcie w grze przycisku ` umożliwia otwieranie i zamykanie panelu komend. Można wpisywać w nim przedstawione poniżej skróty.
+
+
+PRZEJŚCIE DO POZIOMU / PUNKTU KONTROLNEGO – Odblokowanie po ukończeniu poziomu. Funkcja nie jest obsługiwana przez poziomy Warsztatu.
+--------------------------
+Aby przejść do kolejnego poziomu i określonego punktu kontrolnego, wystarczy wpisać poniższą komendę (ze spacjami), a następnie nacisnąć Enter:
+
+
+
+l <level> <checkpoint>
+
+Aby przejść do punktu kontrolnego 5 na poziomie Aztekowie, należy wpisać tekst:
+
+
+l 8 5 
+
+Aby przejść do określonego punktu kontrolnego na poziomie, wystarczy wpisać poniższe polecenie (ze spacjami), a następnie nacisnąć Enter:
+
+
+cp <number>
+
+
+Poziomy i punkty kontrolne zaczynają się od 0. Są one następujące:
+
+0–Rezydencja, punkty kontrolne 0–3
+1–Pociąg, punkty kontrolne 0–4
+2–Tragarz, punkty kontrolne 0–3
+3–Góra, punkty kontrolne 0–3
+4–Demolka, punkty kontrolne 0–7
+5–Zamek, punkty kontrolne 0–12
+6–Woda, punkty kontrolne 0–10
+7–Elektrownia, punkty kontrolne 0–14
+8–Aztekowie, punkty kontrolne 0–13
+9–Ciemny, punkty kontrolne 0–24
+10–Para, punkty kontrolne 0-11
+11–Lód, punkty kontrolne 0-13
+12–Lód, punkty kontrolne 0-3
+13–Twórcy, punkty kontrolne 0
+
+
+KAMERA Z PERSPEKTYWY PIERWSZEJ OSOBY
+-----------------
+Wpisz FPS i naciśnij Enter – przełączenie na eksperymentalny tryb FPS
+
+
+KAMERA – odblokowanie po ukończeniu poziomu
+------
+* [ oraz ] (nawiasy kwadratowe) – zmiana skali obrazu Naciśnięcie klawisza Esc, który włącza i wyłącza menu pauzy, spowoduje wyzerowanie skali obrazu kamery do parametrów domyślnych.
+* , (przecinek) oraz . (kropka) – zwiększanie i zmniejszanie gęstości chmur/mgły (w przypadku niższego poziomu bardziej izometryczne ujęcia będą wyglądały na mało nasycone) 
+* F6 – zatrzymanie/odblokowanie klatki (w celu rejestracji nieruchomego obrazu)
+* F7 – włączenie kamery pełnoekranowej w trybie współpracy
+* F8 – uruchomienie trybu swobodnego kamery (FreeRoam) – umożliwia poruszanie kamerą oraz rejestrację animacji
+* Ctrl+Shift+T (albo Cmd+Shift+T na komputerach Mac) – spowolnienie; czas biegnie dwa razy wolniej
+* Ctrl+Shift+R (albo Cmd+Shift+R w przypadku komputerów Mac) – rejestracja wideo (nastąpi spowolnienie gry w celu przeniesienia plików PNG do katalogu C:\Users\user\AppData\LocalLow\NoBrakesGames\Human\Frames albo katalogu /Users/user/Library/Application Support/unity.NoBrakesGames.Human/Frames) (Mac)
+
+
+KAMERA SWOBODNA
+----------------
+W trybie swobodnym dostępne są poniższe skróty do kierowania kamerą:
+* WASD – ruch
+* Q – do góry
+* Z – do dołu
+Klawisze WASD oraz QZ są powiązane z kątem ustawienia kamery.
+* Ruch myszy – rozglądanie się
+* Pokrętło myszy – zmiana pola widzenia
+* F6 – zablokowanie/odblokowanie postaci
+
+
+REJESTRATOR (TRYB KINOWY) – odblokowanie po ukończeniu poziomu; Po aktywacji uzyskiwanie postępów w osiągnięciach / odblokowywanie osiągnięć będzie niemożliwe
+-----------------------
+Naciśnięcie przycisku * (symbol mnożenia na klawiaturze numerycznej) rozpoczyna rejestrację klatek. W lewym górnym rogu ekranu pojawi się wskaźnik nagrywania informujący o uruchomieniu tego trybu. Ponowne naciśnięcie klawisza * spowoduje zatrzymanie rejestracji i przejście do trybu kinowego. Ponowne naciśnięcie przycisku * w trybie kinowym spowoduje wyjście z nagrywania. W trybie kinowym u dołu ekranu pojawi się linia czasowa i dostępne będą następujące skróty:
+* Strzałka w lewo – przewijanie do tyłu
+* Strzałka w prawo – przewijanie do przodu
+* Shift + Strzałka w lewo – szybkie przewijanie do tyłu
+* Shift + Strzałka w prawo – szybkie przewijanie do przodu
+* Spacja – odtwarzanie/pauza
+* Shift + Spacja – odtwarzanie do tyłu
+
+Do zapisania zarejestrowanych klatek potrzebny jest zewnętrzny program do rejestracji obrazu wideo (np. Fraps). Można również użyć kombinacji Ctrl+Shift+R (Mac: Cmd+Shift+R). 
+
+
+KLATKA KLUCZOWA (TRYB KINOWY) – po aktywacji nastąpi zablokowanie postępów / odblokowanie
+------------------------
+W celu stworzenia dynamicznego nagrania w trybie kinowym w klatkach kluczowych można maksymalnie 9 razy zapisać zmienne kamery (kąt i umiejscowienie kamery). Oprócz wprowadzenia zmiennych kamery można także określić rodzaj przejść pomiędzy klatkami. Te elementy zostaną zaznaczone na linii czasowej, która pojawia się w trybie kinowym. W celu zapisania opcji klatek kluczowych należy korzystać z klawiszy nad literami, a nie z klawiatury numerycznej. Do zapisania opcji klatek kluczowych konieczne jest włączenie kamery swobodnej w trybie kinowym.
+
+* 1–9 – Utwórz regularną klatkę kluczową w bieżącej klatce nagrywania (zostanie zapamiętana pozycja i kąt kamery)
+Jeżeli postać wykonuje w powietrzu akrobacje (w szczególności skoki), ujęcia mogą być nieostre i rozedrgane. 
+* Shift 1–9 – Utwórz ukierunkowaną klatkę kluczową z widokiem na człowieka (zostanie zapamiętana pozycja kamery; kąt kamery zostanie ustawiony w zależności od ostatecznego umiejscowienia postaci) Oznaczone literą t na linii czasowej
+* Ctrl 1–9 (Mac: Cmd 1–9) – Utwórz klatkę kluczową postaci (zostanie zapamiętana pozycja kamery względem ustawienia postaci). Oznaczone literą h na linii czasowej
+* 0 – usuń klatki kluczowe
+
+Możesz miksować i łączyć wszystkie trzy rodzaje klatek kluczowych (regularne, ukierunkowane, postać).
+Naciśnięcie przycisku cyfry będącej poza kolejnością zastępuje cyfrę wcześniejszą (1, 3 i 2 powoduje usunięcie numeru 3).
